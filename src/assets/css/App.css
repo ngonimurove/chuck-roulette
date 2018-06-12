@@ -1,28 +1,265 @@
 .App {
   text-align: center;
+  height: 100vh;
+  min-width: 320px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: 10px 10px;
+  }
+
+  .header-image {
+    height: 150px;
+  }
+
+  .title {
+    font-size: 1.4em;
+    font-family: "PT Serif", serif;
+  }
+
+  .joke {
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px 20px;
+  }
+
+  .roulette {
+    margin: 20px 20px;
+  }
+
+  .roulette-button {
+    height: 60px;
+    margin: 10px auto;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 1.4em;
+    font-family: "PT Serif", serif;
+    color: white;
+    transition: font-size 0.1s ease;
+  }
+
+  .instructions {
+    font-size: 0.8em;
+  }
+
+  .categories {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(70px, auto));
+  }
+
+  .joke-category {
+    display: flex;
+    background-color: #4a4a4a;
+    color: white;
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    transition: font-size 0.1s ease;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .header {
+    padding: 10px 10px;
+  }
+
+  .header-image {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 1.8em;
+    font-family: "PT Serif", serif;
+  }
+
+  .joke p {
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px 20px;
+  }
+
+  .roulette {
+    margin: 20px 20px;
+  }
+
+  .roulette-button {
+    height: 60px;
+    margin: 10px auto;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 1.4em;
+    font-family: "PT Serif", serif;
+    color: white;
+    transition: font-size 0.1s ease;
+  }
+
+  .instructions {
+    font-size: 0.8em;
+  }
+
+  .categories {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+  }
+
+  .joke-category {
+    display: flex;
+    background-color: #4a4a4a;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    transition: font-size 0.1s ease;
+  }
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 0px 20px;
+  }
+
+  .header-image {
+    height: 200px;
+  }
+
+  .title {
+    font-size: 2.2em;
+    font-family: "PT Serif", serif;
+  }
+
+  .joke {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px 40px;
+  }
+
+  .roulette {
+    margin: 20px 150px;
+  }
+
+  .roulette-button {
+    height: 80px;
+    margin: 10px auto;
+    width: 260px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 2em;
+    font-family: "PT Serif", serif;
+    color: white;
+    transition: font-size 0.1s ease;
+  }
+
+  .roulette-button:hover {
+    font-size: 2.1em;
+    cursor: pointer;
+  }
+
+  .categories {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  }
+
+  .joke-category {
+    display: flex;
+    background-color: #4a4a4a;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    transition: font-size 0.1s ease;
+  }
+
+  .joke-category:hover {
+    font-size: 1em;
+    background-color: black;
+    cursor: pointer;
+  }
 }
 
-.App-title {
-  font-size: 1.5em;
-}
+@media only screen and (min-width: 992px) {
+  .header {
+    padding: 0px 20px;
+  }
 
-.App-intro {
-  font-size: large;
-}
+  .header-image {
+    height: 200px;
+  }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  .title {
+    font-size: 2.2em;
+    font-family: "PT Serif", serif;
+  }
+
+  .joke {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .roulette {
+    margin: 20px 150px;
+  }
+
+  .roulette-button {
+    height: 80px;
+    margin: 10px auto;
+    width: 260px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 2em;
+    font-family: "PT Serif", serif;
+    color: white;
+    transition: font-size 0.1s ease;
+  }
+
+  .roulette-button:hover {
+    font-size: 2.1em;
+    cursor: pointer;
+  }
+
+  .categories {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  }
+
+  .joke-category {
+    display: flex;
+    background-color: #4a4a4a;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    transition: font-size 0.1s ease;
+  }
+
+  .joke-category:hover {
+    font-size: 1em;
+    background-color: black;
+    cursor: pointer;
+  }
 }
