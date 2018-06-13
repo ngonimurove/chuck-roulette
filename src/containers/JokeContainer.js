@@ -7,11 +7,6 @@ const mapStateToProps = state => ({
   jokeError: state.app.jokeError
 });
 
-const mapDispatchToProps = dispatch => ({});
-
-const JokeContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(JokeComponent);
+const JokeContainer = connect(mapStateToProps)(JokeComponent);
 
 export default JokeContainer;

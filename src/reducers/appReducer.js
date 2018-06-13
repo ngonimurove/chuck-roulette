@@ -26,7 +26,6 @@ const appReducer = (state = INITIAL_STATE, action) => {
     case GET_CATEGORIES_FULFILLED:
       return { ...state, categories: action.payload, categoriesLoading: false };
     case GET_CATEGORIES_REJECTED:
-      console.log("Get categories Error: ", action.payload);
       return {
         ...state,
         categoriesError: action.payload,
@@ -42,7 +41,6 @@ const appReducer = (state = INITIAL_STATE, action) => {
         jokeLoading: false
       };
     case GET_JOKE_BY_CATEGORY_REJECTED:
-      console.log("Get joke by category Error: ", action.payload);
       return {
         ...state,
         joke: null,
@@ -59,7 +57,6 @@ const appReducer = (state = INITIAL_STATE, action) => {
         jokeLoading: false
       };
     case GET_RANDOM_JOKE_REJECTED:
-      console.log("Get random joke Error: ", action.payload);
       return {
         ...state,
         joke: null,
