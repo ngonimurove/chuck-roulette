@@ -2,6 +2,11 @@
   text-align: center;
   height: 100vh;
   min-width: 320px;
+  margin-bottom: 40px;
+}
+
+.error {
+  color: red;
 }
 
 @media only screen and (max-width: 480px) {
