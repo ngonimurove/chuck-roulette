@@ -61,7 +61,7 @@ const getCategoriesPendingEpic = action$ => {
   return action$.pipe(
     ofType(GET_CATEGORIES_PENDING),
     mergeMap(action => {
-      return fromPromise(fetchCategoriesJoke())
+      return fromPromise(fetchCategories())
         .map(response => ({
           type: GET_CATEGORIES_FULFILLED,
           payload: response
@@ -76,7 +76,7 @@ const getCategoriesPendingEpic = action$ => {
   );
 };
 
-const fetchCategoriesJoke = () => {
+const fetchCategories = () => {
   return fetch(`https://api.chucknorris.io/jokes/categories`).then(response => {
     return response.json();
   });
